@@ -1,0 +1,40 @@
+.popaket-config .pt-card {
+    vertical-align: top;
+    padding: 40px 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 400px;
+    display: inline-block;
+    margin-bottom: 20px; }
+.popaket-config .pt-card:nth-child(2n) {
+    margin-left: 20px; }
+.popaket-config h2 {
+    margin: 0; }
+.popaket-config .pt-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px; }
+.popaket-config label {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 10px; }
+.popaket-config input[type="checkbox"] + label {
+    margin-bottom: 5px; }
+.popaket-config .pt-group {
+    margin-bottom: 20px; }
+.popaket-config input[type="text"],
+.popaket-config input[type="tel"],
+.popaket-config input[type="number"],
+.popaket-config select,
+.popaket-config input[type="email"] {
+    max-width: none;
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+    background-color: #f6f6f6;
+    border-radius: 5px; }
+
+@media (max-width: 1200px) {
+    .popaket-config .pt-card:nth-child(2n) {
+        margin-left: 0; } 
+}
