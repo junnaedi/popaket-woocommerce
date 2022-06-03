@@ -112,7 +112,7 @@ if ( ! class_exists( 'WC_Popaket_Shipping_Method' ) ) {
             $width = 0;
             foreach ( $package['contents'] as $item_id => $values ) {
                 $_product = $values['data'];
-                $weight += $this->get_weight_in_kg( $_product->get_weight() ) * $values['quantity'];
+                $weight += $this->get_weight_in_kg( $_product->get_weight() ?: 0 ) * $values['quantity'];
                 $height += $this->get_dimension_in_cm( floatval( $_product->get_height() ) ) * $values['quantity'];
                 $length = ( floatval( $_product->get_length() ) > $length ) ? $this->get_dimension_in_cm( floatval( $_product->get_length() ) ) : $length;
                 $width = ( floatval( $_product->get_width() ) > $width ) ? $this->get_dimension_in_cm( floatval( $_product->get_width() ) ) : $width;
